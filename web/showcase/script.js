@@ -1,6 +1,6 @@
 let width = 16;
 let height = 16;
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'pink', 'purple', 'white', 'black'];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'pink', 'purple', 'brown', 'white', 'black'];
 
 function init() {
   let table = document.getElementById("table-showcase");
