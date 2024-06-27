@@ -2,7 +2,7 @@ let currentTool = "pencil";
 let width = 16;
 let height = 16;
 let currentColor = "black";
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'pink', 'purple', 'white', 'black'];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'pink', 'purple', 'brown', 'white', 'black'];
 let popup = document.getElementById("popup");
 let popupTitle = document.getElementById("popup-title");
 let popupDesc = document.getElementById("popup-desc");
@@ -13,7 +13,7 @@ function aboutPopup(type) {
       sendPopup("verybadpxl", `Hello!<br>
       I'm <a href='https://glitch.com/@hrantm'>hrantm</a>, a programmer and musician.<br>
       I made verybadpxl as a fun project which only took a few hours, but now I think it could be turned into a much bigger website!<br>
-      If you want to help out, 
+      If you want to help out, check out the <a href='https://github.com/tnarh/verybadpxl'>GitHub page</a>.
       `);
       break;
     default:
@@ -110,7 +110,7 @@ function saveData() {
       let bgColor = pixel.style.backgroundColor;
 
       if (bgColor == "" || bgColor == undefined) {
-        text += "7";
+        text += colors.indexOf('white');
       } else {
         text += colors.indexOf(bgColor);
       }
