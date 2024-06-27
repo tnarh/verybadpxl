@@ -1,0 +1,1 @@
+go to /addons instead of / theres like a few useful features there
