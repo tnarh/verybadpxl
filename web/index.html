@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/4fd35de1-8c56-45ae-b696-3cfb58e31a1a/verybadpxl_nobg.ico?v=1705317974993" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+
+    <title>verybadpxl</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body onload="init()">
+    <div id="popup" style="display: none;">
+      <div id="popup-inside">
+        <span id="popup-title">title</span>
+        <br>
+        <span id="popup-desc">descd esc desc desc desc</span>
+        <br>
+      </div>
+      <button id="popup-close" onclick="document.getElementById('popup').style.display = 'none';">
+        Close
+      </button>
+    </div>
+    
+    <div class="all">
+      <div class="settings">
+        <div class="aboutButtons">
+          <button onclick="aboutPopup('about')">
+            About
+          </button>
+        </div>
+        <div class="actions">
+          <button onclick="saveData(true)">Get data for image</button>
+          <button onclick="loadDataStart()">Load image with data</button>
+          <button onclick="showcase()">Go to showcase</button>
+        </div>
+        <div class="tools-div">
+          <button
+            id="pencil"
+            class="tools"
+            onclick="setTool(this.id)"
+            data-active="true"
+          >
+            🖊️
+          </button>
+          <button
+            id="eraser"
+            class="tools"
+            onclick="setTool(this.id)"
+            data-active="false"
+          >
+            ❌
+          </button>
+          <button
+            id="picker"
+            class="tools"
+            onclick="setTool(this.id)"
+            data-active="false"
+          >
+            🎨
+          </button>
+        </div>
+      </div>
+      <br />
+      <div id="colors">
+        <button id="red" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="orange" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="yellow" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="green" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="blue" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="pink" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="purple" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="white" class="color-choice" onclick="setColor(this.id)"></button>
+        <button id="black" class="color-choice" onclick="setColor(this.id)"></button>
+      </div>
+      <br />
+      <div class="pixels">
+        <table id="table"></table>
+      </div>
+    </div>
+  </body>
+</html>
