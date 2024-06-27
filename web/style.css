@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=DM+Sans:opsz@9..40&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#popup {
+  position: absolute;
+  z-index: 100;
+  margin: 1vw;
+  width: 25vw;
+  min-height: 20vh; /* Set a minimum height */
+  max-height: 60vh; /* Set a maximum height */
+  background-color: #dddddd;
+  border: 1px solid black;
+  overflow-y: auto; /* Enable vertical scroll if content exceeds max-height */
+  padding: 2%; /* Adjust padding as needed */
+}
+
+#popup-inside {
+  margin: 3%;
+}
+
+#popup-title {
+  font-weight: bold;
+  font-size: 1.75vw;
+  color: black;
+}
+
+#popup-desc {
+  font-size: 1.25vw;
+  color: gray;
+  /* Allow description to wrap */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.pixels {
+  display: flex;
+  justify-content: center;
+}
+
+.pixel {
+  width: 2vw;
+  height: 2vw;
+  border: 1px solid gray;
+}
+
+.pixel-showcase {
+  width: 2vw;
+  height: 2vw;
+}
+
+.settings {
+  text-align: center;
+}
+
+/* Additional styling for better visualization */
+table {
+  border-collapse: collapse;
+}
+
+#table-showcase {
+  border: 10px dashed black;
+}
+
+.info-auth {
+  border: none;
+  width: 90vw;
+  text-align: center;
+  font-family: "Crimson Text", "Times New Roman", serif, sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+  margin-bottom: 0.1vh;
+  color: gray;
+}
+
+.info-name {
+  border: none;
+  width: 90vw;
+  text-align: center;
+  font-family: "Crimson Text", "Times New Roman", serif, sans-serif;
+  font-weight: 600;
+  font-size: 150%;
+  margin-bottom: 1vh;
+}
+
+td {
+  padding: 0;
+}
+
+.tools-div {
+  margin-top: 10px;
+}
+
+.tools {
+  width: 3vw;
+  height: 3vw;
+  font-size: 1.23vw;
+}
+
+.tools[data-active="true"] {
+  background-color: lime;
+}
+
+.tools[data-active="false"] {
+  background-color: default;
+}
+
+.possible {
+  opacity: 0.25;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+}
+
+.color-choice {
+  width: 2vw;
+  height: 2vw;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  display: inline;
+}
+
+#red { background-color: red; }
+#orange { background-color: orange; }
+#yellow { background-color: yellow; }
+#green { background-color: green; }
+#blue { background-color: blue; }
+#pink { background-color: pink; }
+#purple { background-color: purple; }
+#white { background-color: white; }
+#black { background-color: black; }
