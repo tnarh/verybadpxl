@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/4fd35de1-8c56-45ae-b696-3cfb58e31a1a/verybadpxl_nobg.ico?v=1705317974993" />
+
+    <title>verybadpxl</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="init()">
+    <div class="all">
+      <input
+        type="text"
+        class="info-auth"
+        id="info-auth"
+        placeholder="Write your name here..."
+        oninput="updateTitle()"
+      />
+      <input
+        type="text"
+        class="info-name"
+        id="info-name"
+        placeholder="Write your paintings name here..."
+        oninput="updateTitle()"
+      />
+      <div class="pixels">
+        <table id="table-showcase"></table>
+      </div>
+    </div>
+
+    <p class="possible">
+      image and display made with
+      <a href="https://glitch.com/~verybadpxl">VeryBadPXL</a> by
+      <a href="https://glitch.com/@hrantm">@hrantm</a>
+    </p>
+  </body>
+</html>
